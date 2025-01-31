@@ -1,0 +1,119 @@
+.listcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 1rem;
+}
+div.list{
+    background-color: rgb(2, 46, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 80%;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 0 1rem 0  rgb(0, 0, 0) ;
+}
+div.list .disabled{
+    color: red;
+    font-size: 1.5rem;
+}
+div.list button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    /* width: 25%; */
+    margin:1rem ;
+    border-radius: 3rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+     cursor: pointer;
+     transition: 0.3s;
+}
+div.list .listli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 75%;
+    padding: 1rem 3rem;
+    margin:1rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+}
+div.list .listbtn{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 25%;
+}
+div.list .listli li{
+    list-style: none;   
+}
+div.list button:hover{
+    box-shadow: 0 0 1rem 0  rgb(255, 255, 255) ;
+   
+}
+
+
+
+
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: green;
+}
+
+.custom-checkbox input {
+    display: none; /* پنهان کردن چک باکس اصلی */
+}
+
+.checkmark {
+    width: 3rem; /* عرض چک باکس */
+    height: 3rem; /* ارتفاع چک باکس */
+    background-color: green; /* رنگ پس‌زمینه */
+    border-radius: 30%; /* گرد کردن گوشه‌ها */
+    margin: 1rem; 
+    position: relative;
+    transition: 0.3s;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #00ff08; /* رنگ پس‌زمینه زمانی که چک باکس انتخاب شده */
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+    display: block;
+}
+
+.checkmark::after {
+    left: 16px; /* موقعیت علامت تیک */
+    top: 3px; /* موقعیت علامت تیک */
+    width: 15px; /* عرض علامت تیک */
+    height: 30px; /* ارتفاع علامت تیک */
+    border: solid rgb(0, 0, 0); /* رنگ علامت تیک */
+    border-width: 0 2px 2px 0; /* ضخامت خطوط علامت تیک */
+    transform: rotate(45deg); /* چرخاندن علامت تیک */
+}
+.checkmark:hover{
+    box-shadow: 0 0 1rem 0  rgb(255, 255, 255) ;
+}

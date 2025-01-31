@@ -1,0 +1,32 @@
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+}
+.container1 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container1 form input{
+    width: 30rem;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    /* line-height: 3rem; */
+    padding: 1rem 2rem;
+}
+.container1 form button{
+      width: 35%;
+    margin: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    line-height: 2rem;
+    
+}
