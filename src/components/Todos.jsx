@@ -29,7 +29,7 @@ function Todos(){
     };
     
     const handleBtnAdd = ()=>{
-        if(!text && !edittext){return}
+        if(!text.trim() && !edittext.trim()){return}
         if(status === 'edit'){
             const newTexts = texts.map((t)=> t.id === editId ? {...t,text:edittext} : t);
             setTexts(newTexts);

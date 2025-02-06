@@ -11,8 +11,9 @@ export default function Login() {
  
     const handleLogin =(e)=>{
     e.preventDefault();
-    if (!userName){
+    if (!userName.trim()){
         alert('لطفا نام خود را وارد کنید')
+        return
     }
     if (userName && password === '1234' ) {
         dispatch(
