@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useContext } from "react";
 import { loginContext } from "../context/loginContext";
+import Footer from "./footer";
 
 function Todos(){
 
@@ -78,6 +79,7 @@ function Todos(){
         <Navbar/>
         <Input handleText={(e)=>handleText(e)} handleBtnAdd={handleBtnAdd} text={text} status={status} edittext={edittext} handleFilterComplete={handleFilterComplete} />
         <List texts={texts} status={status} handleDelet={handleDelet} handleEdit={handleEdit} handleComplete={handleComplete} textsIsComplete={textsIsComplete} completes={completes} isDisabled={isDisabled} />
+        <Footer/>
         </>
     )
 }

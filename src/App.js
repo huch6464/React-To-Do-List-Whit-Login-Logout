@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Home from './pages/Home';
+
 import { Route, Routes,BrowserRouter as Router } from 'react-router-dom';
-import AboutUs from './pages/AboutUs';
+import AboutUs from './pages/About';
 import Todos from './components/Todos';
 import { useContext } from 'react'
 import Login from './pages/Login'
 import { loginContext } from './context/loginContext'
+
 
 
 function App() {
@@ -16,9 +17,8 @@ function App() {
     { state.isLogin ?
      <Router>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/aboutus' element={<AboutUs/>}/>
-          <Route path='/todos' element={<Todos/>}/>
+          <Route path='/about' element={<AboutUs/>}/>
+          <Route path='/' element={<Todos/>}/>
         </Routes>
      </Router>
      : <Login/>}

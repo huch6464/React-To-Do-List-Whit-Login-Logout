@@ -10,13 +10,10 @@ export default function Navbar() {
         <div className="navbar">
             <ul>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <Link to='/'>To Do List</Link>
                 </li>
                 <li>
-                    <Link to='/todos'>Todos</Link>
-                </li>
-                <li>
-                    <Link to='/aboutus'>AboutUs</Link>
+                    <Link to='/about'>About This project</Link>
                 </li>
             </ul>
             <div className='logout'>

@@ -37,7 +37,7 @@ div.input button{
     margin:2rem 0.5rem 2rem 2rem;
     border-radius: 2rem;
     padding: 1rem;
-    /* font-size: 3rem; */
+    font-size: 0.7rem;
     border: none;
     outline: none;
     background-color: green;
@@ -46,9 +46,9 @@ div.input button{
     transition: 0.3s;
 }   
 div.input button span{
-    font-size: 3rem;
+    font-size: 1rem;
     margin: 0 1rem 0.5rem 1rem;
-    color: rgb(2, 46, 0);
+    color: rgb(255, 255, 255);
 }
 div.input button:hover{
 box-shadow: 0 0 1rem 0  rgb(255, 255, 255) ;

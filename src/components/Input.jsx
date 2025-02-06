@@ -19,7 +19,7 @@ export default function Input({handleText,handleBtnAdd,text,status,edittext,hand
         <h3>My Todo List</h3>
         <div className="input">
             <input type="text" ref={inputRef} value={(status === 'edit')?edittext:text} onChange={handleText} onKeyDown={handleKeyPress} />
-            <button onClick={handleBtnAdd}>{(status === 'edit') ?<span>edit</span> : <span>+</span>}</button>
+            <button onClick={handleBtnAdd}>{(status === 'edit') ?<span>edit</span> : <span>Add</span>}</button>
             <button onClick={handleFilterComplete}>{status === 'filterComplete'? 'Show All' : 'Show Complete'}</button>
         </div>
         </>

@@ -29,6 +29,7 @@ div.navbar .logout button{
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    margin-right: 5rem;
     border-radius: 2rem;
     font-size: 1rem;
     border: none;
